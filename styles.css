@@ -1,0 +1,315 @@
+@font-face {
+  font-family: 'HelveticaNeueRoman';
+  src: url('./fonts/HelveticaNeueRoman.otf') format('truetype');
+}
+
+@font-face {
+  font-family: 'HelveticaNeueBlack';
+  src: url('./fonts/HelveticaNeueBlack.otf') format('truetype');
+}
+
+.ajuste-geral {
+    overflow: hidden;    
+}
+
+/* ---------------------------- Header ---------------------------- */
+
+.header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    position: sticky;
+    top: 0;
+}
+
+.header_title {
+    padding: 10px;
+    font-size: 1rem;
+    font-family: 'HelveticaNeueRoman';
+    color: black;
+}
+
+.header_links {
+    text-decoration: none;
+}
+
+.header_links :hover {
+    color: rgb(73, 71, 71);
+}
+
+.header_links_link {
+    padding: 10px;
+    font-size: 1rem;
+    font-family: 'HelveticaNeueRoman';
+    color: black;
+}
+
+.header_container {
+    display: flex;
+}
+
+/* ---------------------------- Footer ---------------------------- */
+
+.rodape {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    background-color: white;
+    position: sticky;
+    bottom: 0;
+}
+
+.rodape_info {
+    padding: 10px;
+    margin-right: 20px;
+    font-size: 1rem;
+    font-family: 'HelveticaNeueRoman';
+    color: black;
+}
+
+/* ---------------------------- Home - Projetos ---------------------------- */
+
+.projetos {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+}
+
+.projetos_lista {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.projetos_lista_item {
+    width: 33.33%;       
+}
+
+.projetos_lista_item img {
+    width: 100%;
+}
+
+
+/* ---------------------------- Projetos - detalhes ---------------------------- */
+.projeto {
+    display: flex;
+}
+
+.projeto_container {
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+}
+
+.projeto_imagens {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100vh;
+    overflow-y: scroll;
+    scrollbar-width: none; 
+    background-color: white;
+}
+
+.projeto_imagens_imagem {
+    width: 100%;
+}
+
+.projeto_descricao {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+}
+
+.projeto_descricao_titulo {
+    font-family: 'HelveticaNeueBlack';
+    font-size: 3.5rem;
+    line-height: .8;
+    margin-bottom: 1.5rem;
+}
+
+.projeto_descricao_categorias {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 3.5rem;
+}
+
+.projeto_descricao_categorias_categoria {
+    font-size: 1rem;
+    font-family: 'HelveticaNeueRoman';
+    color: black;
+    margin: 0 20px 10px 0;
+}
+
+.projeto_descricao_sobre {
+    font-size: 1rem;
+    font-family: 'HelveticaNeueRoman';
+    color: black;
+    margin-right: 20px;
+    margin-bottom: 3.5rem;
+    width: 75%;
+}
+
+.projeto_descricao_divider {
+    width: 50%;
+    height: 1px;
+    border: none;
+    background-color: black;
+    text-align: left;
+    margin: 0 0 3.5rem 0;
+}
+
+.projeto_descricao_links {
+    display: flex;
+}
+
+.projeto_descricao_links_link {
+    text-decoration: none;
+}
+
+.projeto_descricao_links_link :hover {
+    color: rgb(73, 71, 71);
+}
+
+.projeto_descricao_links_link_texto {
+    padding: 10px;
+    font-size: 1rem;
+    font-family: 'HelveticaNeueRoman';
+    color: black;
+}
+
+.projeto_imagens_container-especial {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+/* ---------------------------- Sobre ---------------------------- */
+
+/* .experiencia{
+    display: flex;
+    width: 100%;
+}
+
+.experiencias_formacoes_list_item_titulo,
+.experiencias_trabalhos_list_item_titulo {
+    color: black;
+    font-family: 'HelveticaNeueRoman';
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin: 10px 0 10px 10px; 
+}
+
+.experiencias_list {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.experiencias_list_trabalhos,
+.experiencias_list_formacoes {
+    width: 100%;
+}
+
+.experiencias_trabalhos_list_item,
+.experiencias_formacoes_list_item {
+    display: flex;
+    align-items: end;
+    margin-bottom: 10px;
+}
+
+.experiencias_trabalhos_list_item_cargo,
+.experiencias_trabalhos_list_item_empresa,
+.experiencias_trabalhos_list_item_periodo,
+.experiencias_formacoes_list_item_experiencia,
+.experiencias_formacoes_list_item_entidade,
+.experiencias_formacoes_list_item_periodo {
+    margin-right: 16px;
+}
+
+.experiencias_trabalhos_list_item_cargo,
+.experiencias_formacoes_list_item_experiencia {
+    font-family: 'HelveticaNeueRoman';
+    font-size: 1rem;
+    color: black;
+    margin-left: 10px;
+}
+
+.experiencias_trabalhos_list_item_empresa,
+.experiencias_trabalhos_list_item_periodo,
+.experiencias_formacoes_list_item_entidade,
+.experiencias_formacoes_list_item_periodo {
+    font-family: 'HelveticaNeueRoman';
+    font-size: 0.75rem;
+    color: gray;
+    text-transform: uppercase;
+} */
+
+.experiencia{
+    display: flex;
+    width: 100%;
+}
+
+.experiencias_formacoes_list_item_titulo,
+.experiencias_trabalhos_list_item_titulo {
+    color: black;
+    font-family: 'HelveticaNeueRoman';
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin: 10px 0 10px 0; 
+}
+
+.experiencias_list {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.experiencias_list_trabalhos,
+.experiencias_list_formacoes {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.experiencias_trabalhos_list_item,
+.experiencias_formacoes_list_item {
+    display: flex;
+    align-items: end;
+    margin-bottom: 10px;
+}
+
+.experiencias_trabalhos_list_item_cargo,
+.experiencias_trabalhos_list_item_empresa,
+.experiencias_trabalhos_list_item_periodo,
+.experiencias_formacoes_list_item_experiencia,
+.experiencias_formacoes_list_item_entidade,
+.experiencias_formacoes_list_item_periodo {
+    margin-right: 16px;
+}
+
+.experiencias_trabalhos_list_item_cargo,
+.experiencias_formacoes_list_item_experiencia {
+    font-family: 'HelveticaNeueRoman';
+    font-size: 1rem;
+    color: black;
+}
+
+.experiencias_trabalhos_list_item_empresa,
+.experiencias_trabalhos_list_item_periodo,
+.experiencias_formacoes_list_item_entidade,
+.experiencias_formacoes_list_item_periodo {
+    font-family: 'HelveticaNeueRoman';
+    font-size: 0.75rem;
+    color: gray;
+    text-transform: uppercase;
+}
+
+.sobre_imagem {
+    width: 100%;
+}
