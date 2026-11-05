@@ -319,10 +319,14 @@
     align-items: end;
     margin-bottom: 10px;
 
-    @media (max-width: 390px) {
-        align-items: center;
-        margin-bottom: 16px;       
-    }
+    @media (max-width: 510px) {
+        flex-direction: column;
+        align-items: start;
+
+        @media (max-width: 390px) {
+            margin-bottom: 16px;       
+        }
+    }    
 }
 
 .experiencias_trabalhos_list_item_cargo,
